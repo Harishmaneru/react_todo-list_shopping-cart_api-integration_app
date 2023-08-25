@@ -13,7 +13,7 @@ import './index.css';
 const App = () => {
   return (
     <BrowserRouter>
-      <Navigation /> {/* Include the Navigation component */}
+      <Navigation />  
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
