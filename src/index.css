@@ -1,13 +1,356 @@
-body {
+/* Reset some default styles */
+body, h1, p {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Navigation bar styles */
+nav {
+  background-color: #06861f;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
 }
+
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Main content styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Home page styles */
+.container h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* About and Contact page styles */
+.container h1, .container p {
+  font-size: 20px;
+}
+
+/* Form styles */
+.container .contact {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin-bottom: 1rem;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.contact {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #1b5d05;  
+}
+
+/* Button container styles */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+/* Button container styles */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  margin-top: 20px;
+}
+
+/* Home button styles */
+.home-button {
+  background-color: #3fa644;
+  color: #fff;
+  padding: 10px 0; /* Adjust padding for better appearance */
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  width: 25%; /* Set width to 25% */
+  transition: background-color 0.3s ease;
+}
+
+/* Apply hover effect on buttons */
+.home-button:hover {
+  background-color: #077b0d;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .home-button {
+    width: 50%; /* Adjust width for smaller screens */
+  }
+}
+/* home page home container */
+/* Center horizontally and vertically */
+#home-container {
+  display: grid;
+  justify-content: center;
+}
+#home-container h1 {
+  font-size: 28px;
+}
+#home-container p {
+  font-size: 18px;
+}
+
+/* about page home container */
+
+#About-container {
+  display: grid;
+  justify-content: center;
+}
+#About-container h1 {
+  font-size: 28px;
+}
+#About-container p {
+  font-size: 18px;
+}
+
+
+
+
+/* -------------------------------- */
+/* To-do List styles */
+/* Styles for ToDoList component */
+
+#todo-container {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  max-width: 400px;
+}
+
+#todo-heading {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+#task-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+#addtask {
+  background-color: #3b800f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#list-container li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+
+#completed-task {
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #777;
+}
+
+#remove-button {
+  background-color: #ec0b0b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+#task-container {
+  margin-top: 16px;
+}
+
+#task-container p {
+  margin: 4px 0;
+  font-size: 16px;
+  color: #555;
+}
+/* -------------------------------- */
+
+/* Styles for ShoppingCart component */
+#cart-container {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  max-width: 400px;
+}
+
+#cart-heading {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+#item-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+#add-item-button {
+  background-color: #297e0ac1;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#item-list {
+  list-style: none;
+  padding: 0;
+}
+
+#item-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.remove-button {
+  background-color: #e30505;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+#total-items,
+#subtotal {
+  margin-top: 16px;
+  font-size: 16px;
+  color: #555;
+}
+
+
+/* API Integration --weather */
+#weather-container {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  max-width: 400px;
+}
+
+#weather-heading {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+#search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+#search-button {
+  background-color: #107c0b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+
+#weather-details {
+  font-size: 16px;
+  color: #555;
+}
+
+#city,
+#temperature,
+#weather,
+#humidity {
+  margin: 8px 0;
+}
+
+#weather-details p {
+  line-height: 1.6;
+}
+
